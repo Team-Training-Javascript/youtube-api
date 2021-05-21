@@ -1,3 +1,11 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+}
+
 
 .logo {
     margin-top: 10px;
@@ -12,4 +20,12 @@
 .burger {
     font-size: 40px;
     color: grey;
+}
+
+.w-10{
+    width: 10%;
+}
+
+.form-box {
+    line-height: 1.2;
 }
