@@ -1,0 +1,15 @@
+
+.logo {
+    margin-top: 10px;
+    line-height: 1.2;
+}
+.logo-yt {
+    width: 45px;
+    position: absolute;
+    line-height: 1.2;
+}
+
+.burger {
+    font-size: 40px;
+    color: grey;
+}
