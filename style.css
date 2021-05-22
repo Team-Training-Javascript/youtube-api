@@ -29,3 +29,19 @@ body {
 .form-box {
     line-height: 1.2;
 }
+
+.yt-brand{
+    width: 250px;
+    border: 2px solid rgb(235, 226, 226);
+}
+
+.name {
+   margin: 0;
+}
+
+.frame {
+    width: 300px;
+    border: 2px solid rgb(228, 220, 220);
+    padding: 20px;
+    margin-bottom: 50px;
+}

@@ -13,11 +13,13 @@
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="./style.css">
+    
 
     <title>Youtube-Api</title>
 </head>
 
 <body class="container-fluid">
+    <!--NavBar-->
     <div class="row logo  ">
         <nav class="navbar navbar-light light-blue lighten-4 container-fluid">
             <div class="col-4">
@@ -25,9 +27,9 @@
                 <img class="logo-yt" src="assests/images/lego-youtube.png"></i>
             </div>
             <div class="col-4 form-box">
-                <form class="d-flex align-items-center" action="">
-                    <input class="w-75 p-2 h-25 border" type="text">
-                    <input class="w-10 p-2 h-25 border" type="text">
+                <form id="form-submit" class="d-flex align-items-center" action="GET">
+                    <input id="search" class="w-75 p-2 h-25 border" type="text">
+                    <input class="btn btn-danger" type="submit" vaule="search">
                     <i class="m-3 h3 text-secondary fas fa-microphone "></i>
                 </form>        
             </div>
@@ -39,6 +41,48 @@
             </div>
         </nav>
     </div>
+    <!--side bar-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-home pr-2 h3 text-secondary "></i>Home</li>
+                    <li><i class="fab fa-gripfire pr-2 h3 text-secondary "></i>Trending</li>
+                    <li><i class="fas fa-step-forward pr-2 h3 text-secondary"></i>Subscriptions</li>
+                </ul>
+                <hr>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-step-forward pr-2 h3 text-secondary"></i>Library</li>
+                    <li><i class="fas fa-sync-alt pr-2 h3 text-secondary"></i>History</li>
+                    <li><i class="fas fa-tv pr-2 h3 text-secondary"></i>Your videos</li>
+                    <li><i class="far fa-clock pr-2 h3 text-secondary"></i>Watch later</li>
+                    <li><i class="fas fa-thumbs-up pr-2 h3 text-secondary"></i>Liked videos</li>
+                </ul>
+                <hr>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-cog pr-2 h3 text-secondary"></i>Setting</li>
+                    <li><i class="fas fa-flag pr-2 h3 text-secondary"></i>Report history</li>
+                    <li><i class="fas fa-question-circle pr-2 h3 text-secondary"></i>Help</li>
+                    <li><i class="far fa-comment-dots pr-2 h3 text-secondary"></i>Send feedback</li>
+                </ul>
+                <hr>
+                <p class="text-center">About Press Copyright <br>Contact us Creator</p>
+               
+           </div>
+           <div class="col-10 d-flex">
+                <article class="vid p-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                           <div id="videos">
+
+                           </div>
+                        </div>
+                    </div>
+           </div>
+        </div>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="script.js"></script>
 </body>
 
 </html>
